@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Practice_while_loop</title>
+</head>
+<body>
+<!--Bai 1-->
+    <h3>Bai 1</h3>
+    <p id="text"></p>
+    <p id="result"></p>
+
+<!--Bai 2-->
+    <h3>Bai 2</h3>
+<script>
+    // Bai 1
+    let num = prompt('Enter a number');
+    let total = 0;
+    while (num != -1){
+        num = prompt('Enter a number');
+        let number = parseInt(num);
+        document.getElementById('text').innerHTML += num + '<br>';
+        total += number;
+    }
+    document.getElementById('result').innerHTML = total;
+
+    // Bai 2
+    let i = 1;
+    while(i<100){
+        document.write("<hr width = " + i + "%>");
+        i++;
+    }
+</script>
+</body>
+</html>
